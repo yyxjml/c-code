@@ -220,3 +220,19 @@
 //	//注：printf函数的返回值是打印在屏幕上字符的个数
 //	return 0;
 //}
+
+//函数的递归
+//void print(int n)
+//{
+//	if (n > 9)
+//	{
+//		print(n / 10);
+//	}
+//	printf("%d ", n % 10);
+//}
+//int main()
+//{
+//	int num = 1234;
+//	print(num);
+//	return 0;
+//}
