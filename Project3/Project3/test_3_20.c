@@ -236,3 +236,148 @@
 //	print(num);
 //	return 0;
 //}
+
+
+//编写函数不允许创建临时变量，求字符串的长度。
+// 用递归的方法写
+//int  my_strlen(char* arr)
+//{	
+//	if (*arr != '\0')
+//	{	
+//		return 1 + my_strlen(arr + 1);
+//	}
+//	else
+//	{
+//		return 0;
+//	}
+//}
+//
+// 用循环的方法写
+//int my_strlen(char* arr)
+//{
+//	int count = 0;
+//	
+//	while(*arr != '\0')
+//	{
+//		count++;
+//		arr++;
+//	}
+//	return count;
+//}
+//
+//int main()
+//{
+//	char arr[] = "bit";
+//	int len = my_strlen(arr);
+//	printf("%d\n",len);
+//}
+
+//求n的阶乘
+//用循环的方法写
+//int factorial(int n)
+//{
+//	int ret = 1;
+//	int i = 0;
+//	for (i=1;i<=n;i++)
+//	{	
+//		ret = ret * i;
+//	}
+//	return ret;
+//}
+//
+//用递归的方法写
+//int factorial(int n)
+//{
+//	if (n <= 1)
+//		return 1;
+//	else
+//	{
+//		return n*factorial(n - 1);
+//	}
+//}
+//
+//int main()
+//{
+//	int n = 0;
+//	scanf("%d",&n);
+//	int ret=factorial(n);
+//	printf("%d\n",ret);
+//	return 0;
+//}
+
+//求第n个斐波那契数
+//用递归的方法实现
+//int Fib(int n)
+//{
+//	if (n <= 2)
+//	{
+//		return 1;
+//	}
+//	else
+//	{
+//		return Fib(n - 1) + Fib(n - 2);
+//	}
+//}
+//
+//用循环的方法实现
+//int Fib(int n)
+//{
+//	int a = 1;
+//	int b = 1;
+//	int c = 1;
+//	while (n>2)
+//	{
+//		c = a + b;
+//		a = b;
+//		b = c;
+//		n--;
+//	}
+//	return c;
+//}
+//
+//
+//int main()
+//{
+//	int n = 0;
+//	scanf("%d",&n);
+//	int ret =Fib(n);
+//	printf("%d\n",ret);
+//	return 0;
+//}
+
+
+//void bubble_sort(int arr[], int sz)
+//{
+//	int i = 0;
+//	for (i = 0; i < sz - 1; i++)//冒泡排序的趟数
+//	{
+//		int temp = 1;
+//		int j = 0;
+//		for (j = 0; j < sz - i - 1; j++)
+//		{
+//			if (arr[j] > arr[j + 1])
+//			{
+//				int tmp = arr[j];
+//				arr[j] = arr[j + 1];
+//				arr[j + 1] = tmp;
+//				temp = 0;
+//			}
+//		}
+//		if (temp = 1)
+//		{
+//			break;
+//		}
+//	}
+//}   //break跳出循环
+//int main()
+//{	
+//	int i = 0;
+//	int arr[] = { 3,1,7,5,8,9,0,2,4,6 };
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	bubble_sort(arr,sz);
+//	for (i = 0; i < sz; i++)
+//	{
+//		printf("%d ", arr[i]);
+//	}
+//	return 0;
+//}
